@@ -1,0 +1,936 @@
+[ 2018-05-10T08:27:50+08:00 ] ::1 ::1 GET /AMS2/public/index.php/index
+[ log ] localhost/AMS2/public/index.php/index [运行时间：0.023570s][吞吐率：42.43req/s] [内存消耗：1,471.73kb] [文件加载：50]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\demo\PHPTutorial\WWW\AMS2\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-10T08:27:50+08:00 ] ::1 ::1 GET /AMS2/public/index.php/index/index/guarantee.html
+[ log ] localhost/AMS2/public/index.php/index/index/guarantee.html [运行时间：0.029151s][吞吐率：34.30req/s] [内存消耗：1,628.49kb] [文件加载：52]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/index\view\index\guarantee.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-10T08:27:59+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin
+[ log ] localhost/AMS2/public/index.php/admin [运行时间：0.067581s][吞吐率：14.80req/s] [内存消耗：4,691.99kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.012234s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.026136s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003252s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011615s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1525912079) [ RunTime:0.005525s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:27:59+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/pub/login.html
+[ log ] localhost/AMS2/public/index.php/admin/pub/login.html [运行时间：0.037456s][吞吐率：26.70req/s] [内存消耗：4,883.40kb] [文件加载：71]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004737s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011098s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000743s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004777s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1525912079) [ RunTime:0.000492s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:27:59+08:00 ] ::1 ::1 GET /AMS2/public/index.php/captcha.html
+[ log ] localhost/AMS2/public/index.php/captcha.html [运行时间：0.028632s][吞吐率：34.93req/s] [内存消耗：1,145.26kb] [文件加载：41]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/pub/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\demo\PHPTutorial\WWW\AMS2\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-05-10T08:28:07+08:00 ] ::1 ::1 POST /AMS2/public/index.php/admin/pub/checklogin.html
+[ log ] localhost/AMS2/public/index.php/admin/pub/checklogin.html [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：4,847.91kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/pub/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => '3m3v',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009076s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006686s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010826s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.009129s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `account` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.009767s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `schoolID` = 'admin'  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] UPDATE `tp_admin_user`  SET `last_login_time`=1525912087,`login_count`=login_count+1,`last_login_ip`='0.0.0.0'  WHERE  `id` = 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.009785s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `login_ip` , `login_location` , `login_browser` , `login_os`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Chrome(66.0.3359.139)' , 'Windows 10') [ RunTime:0.003132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004651s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"3m3v\";}' , 1525912087) [ RunTime:0.001372s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:28:07+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/index/index.html
+[ log ] localhost/AMS2/public/index.php/admin/index/index.html [运行时间：0.097087s][吞吐率：10.30req/s] [内存消耗：4,824.92kb] [文件加载：71]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003645s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+  2 => 'num',
+  3 => 'number',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.007400s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.011941s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type`,`sort` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) ORDER BY group_id,pid,sort,id desc [ RunTime:0.002615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.009449s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004582s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `status` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_mailbox` [ RunTime:0.008415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_mailbox` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_leave` [ RunTime:0.006031s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_leave` WHERE  `isread` = 0  AND `status` = 1  AND `isdelete` = 0 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005136s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1525912087) [ RunTime:0.001511s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:28:07+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/index/welcome.html
+[ log ] localhost/AMS2/public/index.php/admin/index/welcome.html [运行时间：0.086091s][吞吐率：11.62req/s] [内存消耗：4,708.99kb] [文件加载：69]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.010057s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.016092s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001007s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.014996s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013957s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1525912087) [ RunTime:0.000880s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:28:10+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.113802s][吞吐率：8.79req/s] [内存消耗：4,867.08kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003601s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.008404s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010294s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.009871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004984s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.007677s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.008678s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.007335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.002016s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.003581s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.007170s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912090) [ RunTime:0.000521s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:42+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.095015s][吞吐率：10.52req/s] [内存消耗：5,050.63kb] [文件加载：76]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003635s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.005970s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010593s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.013358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004630s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005123s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004706s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.005141s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002352s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004897s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912182) [ RunTime:0.000483s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:43+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.075854s][吞吐率：13.18req/s] [内存消耗：4,867.10kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003400s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006266s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.004851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004845s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005148s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004728s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.004876s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002776s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005232s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912183) [ RunTime:0.000454s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:43+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.082168s][吞吐率：12.17req/s] [内存消耗：4,867.10kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003566s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006720s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009787s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.004742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004727s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.004931s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004809s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.004708s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002376s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005641s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912183) [ RunTime:0.000490s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:43+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.091315s][吞吐率：10.95req/s] [内存消耗：4,867.10kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003468s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.005945s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010519s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.013790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004691s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005186s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004693s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.004997s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002382s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004902s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912183) [ RunTime:0.000457s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:44+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.089295s][吞吐率：11.20req/s] [内存消耗：4,867.10kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003790s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.005794s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009951s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.013463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004733s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005163s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004669s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.004759s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002377s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004763s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912184) [ RunTime:0.000452s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:44+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.101066s][吞吐率：9.89req/s] [内存消耗：4,867.10kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003467s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.005844s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010378s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.024163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005076s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005140s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004759s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.004858s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002401s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004811s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912184) [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:44+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.105705s][吞吐率：9.46req/s] [内存消耗：4,867.10kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003580s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006042s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010162s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.026766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.004756s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004654s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.005038s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002496s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004970s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912184) [ RunTime:0.000473s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T08:29:44+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_position_enroll/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_position_enroll/index.html [运行时间：0.097603s][吞吐率：10.25req/s] [内存消耗：4,867.10kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_position_enroll',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ce8a2ak75kjeanfgppi7632j32',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003375s ]
+[ info ] [ RUN ] app\admin\controller\CompanyPositionEnroll->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyPositionEnroll.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_position_enroll\index.html [ array (
+  0 => 'list',
+  1 => 'companyName',
+  2 => 'area',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010100s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.018999s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.006620s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.005099s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 2 LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_certification` [ RunTime:0.004800s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_patriarch` [ RunTime:0.004869s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = '' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_certification` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_patriarch` WHERE  `isdelete` = 0  AND `user_id` = 'Ea5GpyI2n452N3R10454N' LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002398s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `area` FROM `tp_company_position_enroll` WHERE  `isdelete` = 0 [ RunTime:0.002595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.004906s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_position_enroll/index.html' , 'admin' , 'CompanyPositionEnroll' , 'index' , 'GET' , 'a:0:{}' , 1525912184) [ RunTime:0.000519s ]
+
+---------------------------------------------------------------
