@@ -10091,3 +10091,1394 @@
 [ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/index.html' , 'admin' , 'SchoolManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528268) [ RunTime:0.000483s ]
 
 ---------------------------------------------------------------
+[ 2018-05-17T11:48:50+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_release_position/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_release_position/index.html [运行时间：0.178639s][吞吐率：5.60req/s] [内存消耗：5,044.77kb] [文件加载：76]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.013837s ]
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_release_position\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'companyName',
+  5 => 'city_area',
+  6 => 'enroll_array',
+  7 => 'type_array',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.016137s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002353s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.014685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.006957s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 1 [ RunTime:0.001980s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 2 [ RunTime:0.001642s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 3 [ RunTime:0.005478s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 4 [ RunTime:0.002154s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 5 [ RunTime:0.001660s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 6 [ RunTime:0.001550s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 7 [ RunTime:0.001781s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.008735s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city`,`area` FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.002891s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `companyAccount` <> ''  AND `companyName` <> ''  AND `city` <> ''  AND `area` <> ''  AND `isdown` <> 100 ORDER BY release_time desc [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.011390s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `companyAccount` <> ''  AND `position_type` = 1  AND `isdelete` = 0 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.006660s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.014235s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_release_position/index.html' , 'admin' , 'CompanyReleasePosition' , 'index' , 'GET' , 'a:0:{}' , 1526528930) [ RunTime:0.000914s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:48:52+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html
+[ log ] localhost/AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html [运行时间：0.137837s][吞吐率：7.25req/s] [内存消耗：4,879.07kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'fsedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/company_release_position/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.010582s ]
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->fsedit[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_release_position\fsedit.html [ array (
+  0 => 'schoolName',
+  1 => 'work',
+  2 => 'all_type',
+  3 => 'type_name',
+  4 => 'vo',
+  5 => 'property_name',
+  6 => 'sex_name',
+  7 => 'period_name',
+  8 => 'payroll_name',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012850s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001795s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.010104s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.007594s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `isdelete` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.013496s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`schoolAccount` FROM `tp_school_management` WHERE  `isperfect` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_unit` [ RunTime:0.013839s ]
+[ sql ] [ SQL ] SELECT `work_unit` FROM `tp_work_unit` WHERE  `isdelete` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.012802s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `isdelete` = 0 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011705s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html' , 'admin' , 'CompanyReleasePosition' , 'fsedit' , 'GET' , 'a:1:{s:2:\"id\";s:1:\"7\";}' , 1526528932) [ RunTime:0.000463s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:48:56+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.082920s][吞吐率：12.06req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004032s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006986s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003203s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.020100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005954s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005833s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528936) [ RunTime:0.000483s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:48:57+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/guarantee.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/guarantee.html [运行时间：0.094303s][吞吐率：10.60req/s] [内存消耗：4,772.25kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/account_management/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005888s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\guarantee.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.046270s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006691s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.030747s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html' , 'admin' , 'SchoolManagement' , 'guarantee' , 'GET' , 'a:0:{}' , 1526528937) [ RunTime:0.000727s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:06+08:00 ] ::1 ::1 POST /AMS2/public/index.php/admin/school_management/pay.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/pay.html [运行时间：0.050743s][吞吐率：19.71req/s] [内存消耗：4,772.81kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'pay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'number' => '',
+  'property' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004366s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->pay[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\pay.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.017249s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001034s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010778s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/pay.html' , 'admin' , 'SchoolManagement' , 'pay' , 'POST' , 'a:2:{s:6:\"number\";s:0:\"\";s:8:\"property\";s:0:\"\";}' , 1526528946) [ RunTime:0.000585s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:09+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.075649s][吞吐率：13.22req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005478s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.007074s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001808s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.016544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.006204s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005870s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528949) [ RunTime:0.000516s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:10+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/guarantee.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/guarantee.html [运行时间：0.066266s][吞吐率：15.09req/s] [内存消耗：4,772.25kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/account_management/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005484s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\guarantee.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.024045s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001532s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013579s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html' , 'admin' , 'SchoolManagement' , 'guarantee' , 'GET' , 'a:0:{}' , 1526528950) [ RunTime:0.001002s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:15+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.072294s][吞吐率：13.83req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005044s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006577s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001287s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.016067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.007489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005452s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528955) [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:15+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.081683s][吞吐率：12.24req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004440s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006804s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001229s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.020815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005625s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528955) [ RunTime:0.000517s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:16+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/guarantee.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/guarantee.html [运行时间：0.069781s][吞吐率：14.33req/s] [内存消耗：4,772.25kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/account_management/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008092s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\guarantee.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.026008s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001191s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.016493s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html' , 'admin' , 'SchoolManagement' , 'guarantee' , 'GET' , 'a:0:{}' , 1526528956) [ RunTime:0.000515s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:23+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/guarantee.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/guarantee.html [运行时间：0.125505s][吞吐率：7.97req/s] [内存消耗：4,772.25kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/account_management/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.013792s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\guarantee.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.036029s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001312s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.020536s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html' , 'admin' , 'SchoolManagement' , 'guarantee' , 'GET' , 'a:0:{}' , 1526528963) [ RunTime:0.000830s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:32+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.068049s][吞吐率：14.70req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004343s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.008145s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002069s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.008490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.008479s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.007038s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528972) [ RunTime:0.000523s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:39+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.077236s][吞吐率：12.95req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004127s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.007825s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001803s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.017998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.009189s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.006773s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528979) [ RunTime:0.000474s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:40+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/index.html [运行时间：0.080611s][吞吐率：12.41req/s] [内存消耗：4,895.01kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005356s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006796s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001118s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.014723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.010236s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_school_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_school_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `schoolName` FROM `tp_school_management` WHERE  `schoolName` <> ''  AND `isdelete` = 0 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005711s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/index.html' , 'admin' , 'SchoolManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528980) [ RunTime:0.000498s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:40+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.076978s][吞吐率：12.99req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003760s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.006594s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.014006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005510s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.005459s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526528980) [ RunTime:0.000487s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:46+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/guarantee.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/guarantee.html [运行时间：0.072288s][吞吐率：13.83req/s] [内存消耗：4,772.25kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/account_management/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006366s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\guarantee.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.031452s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002057s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.018928s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html' , 'admin' , 'SchoolManagement' , 'guarantee' , 'GET' , 'a:0:{}' , 1526528986) [ RunTime:0.000557s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:49:57+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/guarantee.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/guarantee.html [运行时间：0.074255s][吞吐率：13.47req/s] [内存消耗：4,772.25kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/account_management/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009307s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\guarantee.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.032426s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007446s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.015590s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html' , 'admin' , 'SchoolManagement' , 'guarantee' , 'GET' , 'a:0:{}' , 1526528997) [ RunTime:0.000776s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:50:19+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.079087s][吞吐率：12.64req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004688s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.008627s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002078s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.014342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.008337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.007337s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526529019) [ RunTime:0.000483s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:50:24+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.082295s][吞吐率：12.15req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003873s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.010001s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001493s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.009775s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008166s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526529024) [ RunTime:0.001155s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:51:03+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_release_position/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_release_position/index.html [运行时间：0.176620s][吞吐率：5.66req/s] [内存消耗：5,044.70kb] [文件加载：76]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005917s ]
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_release_position\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'companyName',
+  5 => 'city_area',
+  6 => 'enroll_array',
+  7 => 'type_array',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011912s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001865s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.021355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.010665s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001893s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.000960s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 1 [ RunTime:0.002256s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 2 [ RunTime:0.003175s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 3 [ RunTime:0.001987s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 4 [ RunTime:0.001626s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 5 [ RunTime:0.001780s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 6 [ RunTime:0.001610s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 7 [ RunTime:0.001506s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.010123s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city`,`area` FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.003401s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `companyAccount` <> ''  AND `companyName` <> ''  AND `city` <> ''  AND `area` <> ''  AND `isdown` <> 100 ORDER BY release_time desc [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.012802s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `companyAccount` <> ''  AND `position_type` = 1  AND `isdelete` = 0 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.010123s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.006911s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_release_position/index.html' , 'admin' , 'CompanyReleasePosition' , 'index' , 'GET' , 'a:0:{}' , 1526529063) [ RunTime:0.001226s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:51:05+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html
+[ log ] localhost/AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html [运行时间：0.138510s][吞吐率：7.22req/s] [内存消耗：4,879.07kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'fsedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/company_release_position/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007227s ]
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->fsedit[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_release_position\fsedit.html [ array (
+  0 => 'schoolName',
+  1 => 'work',
+  2 => 'all_type',
+  3 => 'type_name',
+  4 => 'vo',
+  5 => 'property_name',
+  6 => 'sex_name',
+  7 => 'period_name',
+  8 => 'payroll_name',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.009095s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001179s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.017236s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.003940s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.007540s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `isdelete` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.010975s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`schoolAccount` FROM `tp_school_management` WHERE  `isperfect` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_unit` [ RunTime:0.012630s ]
+[ sql ] [ SQL ] SELECT `work_unit` FROM `tp_work_unit` WHERE  `isdelete` = 0 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.007185s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `isdelete` = 0 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.001206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.006107s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html' , 'admin' , 'CompanyReleasePosition' , 'fsedit' , 'GET' , 'a:1:{s:2:\"id\";s:1:\"7\";}' , 1526529064) [ RunTime:0.001583s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:51:13+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/account_management/index.html
+[ log ] localhost/AMS2/public/index.php/admin/account_management/index.html [运行时间：0.093920s][吞吐率：10.65req/s] [内存消耗：4,870.02kb] [文件加载：73]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'account_management',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004706s ]
+[ info ] [ RUN ] app\admin\controller\AccountManagement->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\AccountManagement.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\account_management\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'all_companyName',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011909s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001743s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_account_management` [ RunTime:0.018694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.011022s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_account_management` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_account_management` WHERE  `isdelete` = 0 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010831s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/account_management/index.html' , 'admin' , 'AccountManagement' , 'index' , 'GET' , 'a:0:{}' , 1526529073) [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:51:14+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/school_management/guarantee.html
+[ log ] localhost/AMS2/public/index.php/admin/school_management/guarantee.html [运行时间：0.078921s][吞吐率：12.67req/s] [内存消耗：4,772.25kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'school_management',
+    2 => 'guarantee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/account_management/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006460s ]
+[ info ] [ RUN ] app\admin\controller\SchoolManagement->guarantee[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\SchoolManagement.php ]
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\school_management\guarantee.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.034799s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001582s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.018733s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/school_management/guarantee.html' , 'admin' , 'SchoolManagement' , 'guarantee' , 'GET' , 'a:0:{}' , 1526529074) [ RunTime:0.000869s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:51:46+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_release_position/index.html
+[ log ] localhost/AMS2/public/index.php/admin/company_release_position/index.html [运行时间：0.153118s][吞吐率：6.53req/s] [内存消耗：5,044.70kb] [文件加载：76]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005563s ]
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->index[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_release_position\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+  4 => 'companyName',
+  5 => 'city_area',
+  6 => 'enroll_array',
+  7 => 'type_array',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012569s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001958s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.020902s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.005507s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_company_release_position` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.002156s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 1 [ RunTime:0.001851s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 2 [ RunTime:0.001889s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 3 [ RunTime:0.004071s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 4 [ RunTime:0.001606s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 5 [ RunTime:0.001481s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 6 [ RunTime:0.002227s ]
+[ sql ] [ SQL ] UPDATE `tp_company_release_position`  SET `isdown`=1  WHERE  `id` = 7 [ RunTime:0.001662s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `companyName` FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.006882s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `city`,`area` FROM `tp_company_release_position` WHERE  `companyAccount` <> ''  AND `isdelete` = 0 [ RunTime:0.002883s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `isdelete` = 0  AND `companyAccount` <> ''  AND `companyName` <> ''  AND `city` <> ''  AND `area` <> ''  AND `isdown` <> 100 ORDER BY release_time desc [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_position_enroll` [ RunTime:0.005655s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_position_enroll` WHERE  `companyAccount` <> ''  AND `position_type` = 1  AND `isdelete` = 0 [ RunTime:0.003273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.005964s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011476s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_release_position/index.html' , 'admin' , 'CompanyReleasePosition' , 'index' , 'GET' , 'a:0:{}' , 1526529106) [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2018-05-17T11:51:49+08:00 ] ::1 ::1 GET /AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html
+[ log ] localhost/AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html [运行时间：0.143338s][吞吐率：6.98req/s] [内存消耗：4,879.07kb] [文件加载：70]
+[ info ] [ LANG ] D:\demo\PHPTutorial\WWW\AMS2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company_release_position',
+    2 => 'fsedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9t2kdho8sjrer0ace6jqscukb3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/AMS2/public/index.php/admin/company_release_position/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004817s ]
+[ info ] [ RUN ] app\admin\controller\CompanyReleasePosition->fsedit[ D:\demo\PHPTutorial\WWW\AMS2\application\admin\controller\CompanyReleasePosition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\demo\PHPTutorial\WWW\AMS2\public/../application/admin\view\company_release_position\fsedit.html [ array (
+  0 => 'schoolName',
+  1 => 'work',
+  2 => 'all_type',
+  3 => 'type_name',
+  4 => 'vo',
+  5 => 'property_name',
+  6 => 'sex_name',
+  7 => 'period_name',
+  8 => 'payroll_name',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.014689s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002980s ] mysql:dbname=paizhi;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_company_release_position` [ RunTime:0.013793s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_company_release_position` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015790s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1  AND `isdelete` = 0  AND `status` = 1 LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_school_management` [ RunTime:0.014042s ]
+[ sql ] [ SQL ] SELECT `schoolName`,`schoolAccount` FROM `tp_school_management` WHERE  `isperfect` = 1  AND `isdelete` = 0 LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_unit` [ RunTime:0.011157s ]
+[ sql ] [ SQL ] SELECT `work_unit` FROM `tp_work_unit` WHERE  `isdelete` = 0 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_work_type` [ RunTime:0.008884s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` WHERE  `isdelete` = 0 [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_work_type` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013044s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '0.0.0.0' , '保留地址 保留地址  ' , 'Windows 10' , 'Chrome(66.0.3359.139)' , 'http://localhost/AMS2/public/index.php/admin/company_release_position/fsedit/id/7.html' , 'admin' , 'CompanyReleasePosition' , 'fsedit' , 'GET' , 'a:1:{s:2:\"id\";s:1:\"7\";}' , 1526529109) [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
